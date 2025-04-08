@@ -7,12 +7,12 @@ Este repositorio contiene un conjunto modular de scripts Bash diseñados para ap
 
 ```
 cis_hardening/
-├── apply-all.sh                  # Script principal que ejecuta todos los módulos
+├── apply-all.sh                  
 └── sections/
     ├── 01_filesystems.sh
     ├── 02_sysctl.sh
     ├── 03_ssh.sh
-    ├── 03_ssh_openscap_compliant.sh  # Versión extendida para cumplimiento con OpenSCAP
+    ├── 03_ssh_openscap_compliant.sh  
     ├── 04_logging.sh
     ├── 05_permissions.sh
     ├── 06_cron_at.sh
