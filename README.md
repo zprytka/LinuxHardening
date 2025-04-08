@@ -1,7 +1,7 @@
 
-# CIS Ubuntu 20.04 Hardening Scripts
+# Ubuntu 20.04 Hardening Scripts
 
-Este repositorio contiene un conjunto modular de scripts Bash diseñados para aplicar las recomendaciones del benchmark de seguridad **CIS (Center for Internet Security)** para sistemas **Ubuntu 20.04 LTS**, basado en la guía v2.0.1.
+Este repositorio contiene un conjunto modular de scripts Bash diseñados para aplicar las recomendaciones del benchmark de seguridad **CIS (Center for Internet Security)** para sistemas **Ubuntu 20.04 LTS**.
 
 ## 🛡️ Estructura del Proyecto
 
@@ -49,18 +49,10 @@ sudo ./apply-all.sh all   # Ejecutar todo sin filtrar por nivel
 
 > 📝 Se crea automáticamente un respaldo de archivos en una carpeta `backup_YYYY-MM-DD_HH:MM:SS`.
 
-## ✅ Validación con OpenSCAP
-
-Incluye un script SSH mejorado (`03_ssh_openscap_compliant.sh`) que incorpora las remediaciones exactas sugeridas por **OpenSCAP** para:
-- `ClientAliveCountMax 0`
-- `ClientAliveInterval 300`
-- `PermitEmptyPasswords no` en el archivo `01-complianceascode-reinforce-os-defaults.conf`
-
-Puedes reemplazar el original o apuntar `apply-all.sh` a este si estás validando con escaneos automatizados.
 
 ## ⚠️ Requisitos
 
-- Ubuntu 20.04 LTS
+- Probado en Ubuntu 20.04 LTS
 - Bash
 - Permisos de superusuario (sudo)
 - OpenSCAP (opcional para validación)
@@ -69,9 +61,6 @@ Puedes reemplazar el original o apuntar `apply-all.sh` a este si estás validand
 
 Todos los archivos modificados se respaldan en una carpeta con timestamp para permitir reversión manual.
 
-## 📄 Licencia
-
-Este proyecto está disponible bajo la licencia MIT.
 
 ---
 
